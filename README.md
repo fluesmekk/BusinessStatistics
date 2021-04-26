@@ -1,3 +1,3 @@
 # BusinessStatistics
 Leser inn JSON objekt og lager rapporter
-Json filen ligger ved i mappa
+\nJson filen ligger ved i mappa
