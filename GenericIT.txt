@@ -1,0 +1,96 @@
+{
+  "BusinessName": "GenericIT",
+  "Departments": [
+    {
+      "DepartmentName": "Avdeling IT",
+      "Teams": [
+        {
+          "TeamName": "Team 1",
+          "Employees": [
+            {
+              "FullName": "Lars Larsen",
+              "Periods": [
+                {
+                  "TimeStarted": "2020-04-21T00:00:00",
+                  "TimeStopped": "2021-03-21T00:00:00",
+                  "Pay": 450000,
+                  "PositionFraction": 100
+                },
+                {
+                  "TimeStarted": "2021-03-21T00:00:00",
+                  "TimeStopped": "2021-04-20T00:00:00",
+                  "Pay": 400000,
+                  "PositionFraction": 85
+                }
+              ],
+              "CurrentlyEmployed": false
+            },
+            {
+              "FullName": "Ole Hansen",
+              "Periods": [
+                {
+                  "TimeStarted": "2020-04-21T00:00:00",
+                  "TimeStopped": null,
+                  "Pay": 255000,
+                  "PositionFraction": 50
+                }
+              ],
+              "CurrentlyEmployed": true
+            }
+          ]
+        },
+        {
+          "TeamName": "Team 2",
+          "Employees": [
+            {
+              "FullName": "Petter Johansen",
+              "Periods": [
+                {
+                  "TimeStarted": "2019-04-21T00:00:00",
+                  "TimeStopped": null,
+                  "Pay": 500000,
+                  "PositionFraction": 100
+                }
+              ],
+              "CurrentlyEmployed": true
+            },
+            {
+              "FullName": "Lars Larsen",
+              "Periods": [
+                {
+                  "TimeStarted": "2021-04-21T00:00:00",
+                  "TimeStopped": null,
+                  "Pay": 650000,
+                  "PositionFraction": 100
+                }
+              ],
+              "CurrentlyEmployed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DepartmentName": "Avdeling HR",
+      "Teams": [
+        {
+          "TeamName": "Team 1",
+          "Employees": [
+            {
+              "FullName": "Line Olsen",
+              "Periods": [
+                {
+                  "TimeStarted": "2018-01-13T00:00:00",
+                  "TimeStopped": null,
+                  "Pay": 600000,
+                  "PositionFraction": 100
+                }
+              ],
+              "CurrentlyEmployed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
