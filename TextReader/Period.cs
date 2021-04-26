@@ -29,5 +29,6 @@ namespace TextReader
             return PositionFraction;
         }
 
+
     }
 }

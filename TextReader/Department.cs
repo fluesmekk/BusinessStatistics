@@ -44,5 +44,17 @@ namespace TextReader
 
             return fractions;
         }
+
+        public string getAllTeams()
+        {
+            string allTeamsStats = "";
+            allTeamsStats += DepartmentName + "\n";
+            foreach (var team in Teams)
+            {
+                allTeamsStats += team.getAllEmployeesStats();
+            }
+
+            return allTeamsStats;
+        }
     }
 }

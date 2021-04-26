@@ -39,5 +39,11 @@ namespace TextReader
             double averagePositionFraction = business.AverageEmployeeFraction();
             Console.WriteLine("The average position fraction is " + (int)averagePositionFraction + "%");
         }
+
+        public void ShowAllEmployees(Business business)
+        {
+            Console.WriteLine("List of all Employees with pay and position fraction\n");
+            Console.WriteLine(business.getAllDepartmentsStats());
+        }
     }
 }

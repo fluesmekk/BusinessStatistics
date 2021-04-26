@@ -35,7 +35,7 @@ namespace TextReader
             List<int> fractions = new List<int>();
             foreach (var employee in Employees)
             {
-                List<int> employeeFractions = employee.GetAvergePositionFraction();
+                List<int> employeeFractions = employee.GetAveragePositionFraction();
                 foreach (var employeeFraction in employeeFractions)
                 {
                     fractions.Add(employeeFraction);
@@ -44,6 +44,19 @@ namespace TextReader
             }
 
             return fractions;
+        }
+
+        public string getAllEmployeesStats()
+        {
+            string allEmployeeStats = "";
+            allEmployeeStats += TeamName + "\n";
+            foreach (var employee in Employees)
+            {
+                allEmployeeStats += employee.GetEmployeeStats();
+                allEmployeeStats += "\n";
+            }
+
+            return allEmployeeStats;
         }
     }
 }

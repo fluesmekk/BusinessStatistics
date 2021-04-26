@@ -29,7 +29,7 @@ namespace TextReader
             return Pay;
         }
 
-        public List<int> GetAvergePositionFraction()
+        public List<int> GetAveragePositionFraction()
         {
             List<int> fractions = new List<int>();
             foreach (var period in Periods)
@@ -38,6 +38,34 @@ namespace TextReader
             }
 
             return fractions;
+        }
+
+        public string GetEmployeeStats()
+        {
+            string returnString = $"{FullName}\n";
+            returnString += GetAllPeriods();
+            return returnString;
+        }
+
+        private string GetAllPeriods()
+        {
+            string periods = "";
+            foreach (var period in Periods)
+            {
+                periods += period.TimeStarted.ToShortDateString();
+                if (period.TimeStopped != null)
+                {
+                    periods += " - " + period.TimeStopped.ToString().Substring(0, 10);
+                }
+                else
+                {
+                    
+                    periods += "\nCurrently with business";
+                }
+                periods += $"\n {period.GetPay()}kr - {period.GetPositionFraction()}%\n";
+            }
+
+            return periods;
         }
     }
 }

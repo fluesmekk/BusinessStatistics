@@ -68,5 +68,16 @@ namespace TextReader
 
             return fractions;
         }
+
+        public string getAllDepartmentsStats()
+        {
+            string allDepartmentsStats = "";
+            foreach (var department in Departments)
+            {
+                allDepartmentsStats += department.getAllTeams();
+            }
+
+            return allDepartmentsStats;
+        }
     }
 }

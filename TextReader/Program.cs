@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Resources;
 //using System.Text.Json;
 using Newtonsoft.Json;
+using TextReader.Properties;
 
 
 namespace TextReader
@@ -46,11 +48,13 @@ namespace TextReader
 
 
             //bruker newton sin Json deserializer, og har serializa med stock serializer.
-            string json = File.ReadAllText("C:/Users/Theodor/Desktop/JSON/GenericIT.txt");
+            string json = Resources.GenericIT;
             Business business = JsonConvert.DeserializeObject<Business>(json);
             BusinessStatistics stats = new BusinessStatistics();
 
-            //Viser hele bedriften
+            //Programmert uten userinterface
+            
+            ////Viser hele bedriften
             stats.ShowAverageOfBusiness(business);
             Console.WriteLine();
 
@@ -63,12 +67,14 @@ namespace TextReader
 
             //Viser en liste over personer 
             stats.ShowAllEmployees(business);
+
+
         }
 
-        
 
-        
 
-        
+
+
+
     }
 }
